@@ -1,0 +1,70 @@
+@import 'variables';
+@import 'body';
+@import 'color';
+@import 'navbar';
+@import 'form';
+@import 'text';
+@import 'sizing';
+@import 'flex';
+@import 'btn';
+
+.adver-header {
+  background-image: url('../images/moon-main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  height: 260px;
+  padding: 10px 0px;
+  .header-name {
+    h1 {
+      margin-bottom: 0rem;
+    }
+    p {
+      margin-top: .25rem;
+    }
+  }
+}
+
+.header-logo {
+  background-image: url('../images/logo_moon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+.content {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+
+.content-item {
+  width: 450px;
+  padding: 1.25rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  .footer-name {
+    .footer-name-brand {
+      display: flex;
+      align-items: center;
+      span {
+        font-weight: bold;
+        margin-left: 1rem;
+      }
+    }
+    .footer-name-year {
+      display: block;
+      margin-top: 1rem;
+      font-size: .75rem;
+    }
+  }
+  .footer-docs {
+
+  }
+}
