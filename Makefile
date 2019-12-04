@@ -7,4 +7,4 @@ install:
 build:
 	rm -rf ./dist
 	NODE_ENV=production npx webpack
-	echo divergent-throat.surge.sh > ./dist/CNAME
+	echo zipofar-project-moon_sea.surge.sh > ./dist/CNAME

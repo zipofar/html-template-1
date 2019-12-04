@@ -64,7 +64,16 @@
       font-size: .75rem;
     }
   }
-  .footer-docs {
-
+  .footer_list {
+    .footer_list-header {
+      font-weight: bold;
+    }
+    .footer_list-list {
+      margin: 1rem 0 0 3rem;
+      a {
+        color: $white;
+        line-height: 1.5rem;
+      }
+    }
   }
 }
