@@ -49,30 +49,33 @@
   display: flex;
   justify-content: space-around;
   padding: 60px 20px;
-  .footer-name {
-    .footer-name-brand {
-      display: flex;
-      align-items: center;
-      span {
-        font-weight: bold;
-        margin-left: 1rem;
+  .footer-block {
+    padding: 2rem;
+    .footer-block-name {
+      .footer-block-name-brand {
+        display: flex;
+        align-items: center;
+        span {
+          font-weight: bold;
+          margin-left: 1rem;
+        }
+      }
+      .footer-block-name-year {
+        display: block;
+        margin-top: 1rem;
+        font-size: .75rem;
       }
     }
-    .footer-name-year {
-      display: block;
-      margin-top: 1rem;
-      font-size: .75rem;
-    }
-  }
-  .footer_list {
-    .footer_list-header {
-      font-weight: bold;
-    }
-    .footer_list-list {
-      margin: 1rem 0 0 3rem;
-      a {
-        color: $white;
-        line-height: 1.5rem;
+    .footer-block-list {
+      .footer-block-list-header {
+        font-weight: bold;
+      }
+      .footer-block-list-list {
+        margin: 1rem 0 0 3rem;
+        a {
+          color: $white;
+          line-height: 1.5rem;
+        }
       }
     }
   }
