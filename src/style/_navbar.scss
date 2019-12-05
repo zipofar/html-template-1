@@ -1,52 +1,72 @@
 .navbar {
   display: flex;
   padding: 10px;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  .navbar-brand {
-    color: $gray-300;
-    display:inline-block;
-    line-height: 2;
-    margin-right: 1rem;
-    .navbar-logo {
-      background-image: url('../images/logo_moon.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      display:inline-block;
-      height: 30px;
-      width: 30px;
-      vertical-align: top;
-    }
-  }
-  .navbar-nav {
-    display: flex;
-    list-style-type: none;
-    line-height: 2;
-    a {
-      padding: 0 0.5rem;
-      color: $gray-300;
-      &:hover {
-        color: $gray-600;
-      }
-    }
+}
+
+.navbar-brand {
+  color: $gray-300;
+  display:inline-block;
+  line-height: 2;
+  margin-right: 1rem;
+  padding-left: .5rem;
+}
+
+.navbar-logo {
+  background-image: url('../images/logo_moon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display:inline-block;
+  height: 30px;
+  width: 30px;
+  vertical-align: top;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  line-height: 2;
+}
+
+.navbar-navlink {
+  display: block;
+  padding: 0 .5rem;
+  color: $gray-300;
+  &:hover {
+    color: $gray-600;
   }
 }
 
 .navbar-toggler {
+  display: none;
   background-color: transparent;
   border: 1px solid rgba(0,0,0,.2);
   border-radius: .25rem;
   cursor: pointer;
-  .navbar-toggler-icon {
-    background-image: url('../images/menu-butter.svg');
-    opacity: .4;
-    display: inline-block;
-    background-size: 100% 100%;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
 }
 
-@media screen and (min-width: 900px) {
+.navbar-toggler-icon {
+  background-image: url('../images/menu-butter.svg');
+  opacity: .4;
+  display: inline-block;
+  background-size: 100% 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .navbar-navlink {
+  }
   .navbar-toggler {
     display: inline-block;
   }
