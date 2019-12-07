@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.navbar-brand {
+.navbar__brand {
   color: $gray-300;
   display:inline-block;
   line-height: 2;
@@ -13,7 +13,7 @@
   padding-left: .5rem;
 }
 
-.navbar-logo {
+.navbar__logo {
   background-image: url('../images/logo_moon.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -23,14 +23,14 @@
   vertical-align: top;
 }
 
-.navbar-nav {
+.navbar__nav {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   line-height: 2;
 }
 
-.navbar-navlink {
+.navbar__navlink {
   display: block;
   padding: 0 .5rem;
   color: $gray-300;
@@ -39,7 +39,7 @@
   }
 }
 
-.navbar-toggler {
+.navbar__toggler {
   display: none;
   background-color: transparent;
   border: 1px solid rgba(0,0,0,.2);
@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 
-.navbar-toggler-icon {
+.navbar__toggler-icon {
   background-image: url('../images/menu-butter.svg');
   opacity: .4;
   display: inline-block;
@@ -60,14 +60,14 @@
   .navbar {
     flex-wrap: wrap;
   }
-  .navbar-nav {
+  .navbar__nav {
     width: 100%;
     flex-direction: column;
     margin-top: 1rem;
   }
-  .navbar-navlink {
+  .navbar__navlink {
   }
-  .navbar-toggler {
+  .navbar__toggler {
     display: inline-block;
   }
 }

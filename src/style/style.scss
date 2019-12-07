@@ -1,82 +1,10 @@
 @import 'variables';
 @import 'body';
 @import 'color';
-@import 'navbar';
-@import 'form';
 @import 'text';
-@import 'sizing';
-@import 'flex';
 @import 'btn';
-
-.adver-header {
-  background-image: url('../images/moon-main.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  height: 260px;
-  padding: 10px 0px;
-  .header-name {
-    h1 {
-      margin-bottom: 0rem;
-    }
-    p {
-      margin-top: .25rem;
-    }
-  }
-}
-
-.header-logo {
-  background-image: url('../images/logo_moon.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
-}
-
-.content {
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 0;
-  padding: 2rem 0;
-}
-
-.content-item {
-  width: 350px;
-  padding: 1.25rem;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 60px 20px;
-  .footer-block {
-    padding: 2rem;
-    .footer-block-name {
-      .footer-block-name-brand {
-        display: flex;
-        align-items: center;
-        span {
-          font-weight: bold;
-          margin-left: 1rem;
-        }
-      }
-      .footer-block-name-year {
-        display: block;
-        margin-top: 1rem;
-        font-size: .75rem;
-      }
-    }
-    .footer-block-list {
-      .footer-block-list-header {
-        font-weight: bold;
-      }
-      .footer-block-list-list {
-        margin: 1rem 0 0 3rem;
-        a {
-          color: $white;
-          line-height: 1.5rem;
-        }
-      }
-    }
-  }
-}
+@import './blocks/navbar';
+@import './blocks/masthead';
+@import './blocks/footer';
+@import './blocks/section-content';
+@import './blocks/form';

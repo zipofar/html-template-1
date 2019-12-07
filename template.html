@@ -4,48 +4,46 @@
     <title>HTML project</title>
   </head>
   <body>
-    <div class="navbar bg-light">
-      <a href="" class="navbar-brand">
-        <span class="navbar-logo"></span>
+    <nav class="navbar bg-light">
+      <a href="" class="navbar__brand">
+        <span class="navbar__logo"></span>
         Лунное море
       </a>
-      <button class="navbar-toggler" type="button">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar__toggler" type="button">
+        <span class="navbar__toggler-icon"></span>
       </button>
-      <ul class="navbar-nav">
-        <li><a href="" class="navbar-navlink">Преимущества</a></li>
-        <li><a href="" class="navbar-navlink">О ЖК</a></li>
-        <li><a href="" class="navbar-navlink">Места для отдыха</a></li>
+      <ul class="navbar__nav">
+        <li><a href="" class="navbar__navlink">Преимущества</a></li>
+        <li><a href="" class="navbar__navlink">О ЖК</a></li>
+        <li><a href="" class="navbar__navlink">Места для отдыха</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="adver-header d-flex flex-flow bg-secondary">
-      <div class="d-flex justify-content-center align-items-center w-100">
-        <div class="header-logo"></div>
+    <header class="masthead">
+      <div class="masthead__logo">
+        <img src="../images/logo_moon.png" width=100 />
       </div>
-      <div class="header-name w-100 text-center text-light">
-        <h1 class="text-light">ЖК "Лунное море"</h1>
-        <p class="text-light">Место, откуда не хочется улетать</p>
-      </div>
-      <div class="w-100 text-center">
+      <h1 class="masthead__header">ЖК "Лунное море"</h1>
+      <p class="masthead__description">Место, откуда не хочется улетать</p>
+      <div class="masthead__btn_center">
         <a href="#" class="btn btn-outline-light">забронировать</a>
       </div>
-    </div>
+    </header>
 
-    <div class="content d-flex bg-light">
-      <div class="content-item">
+    <div class="section-content bg-light">
+      <div class="content-block section-content__item">
         <h3>Уникальный вид</h3>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
         </p>
       </div>
-      <div class="content-item">
+      <div class="content-block section-content__item">
         <h3>Инфраструктура</h3>
         <p>
 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </p>
       </div>
-      <div class="content-item">
+      <div class="content-block section-content__item">
         <h3>Близость к Москве</h3>
         <p>
 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
@@ -53,23 +51,23 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
       </div>
     </div>
 
-    <div class="content d-flex bg-dark">
-      <div class="content-item">
+    <div class="section-content bg-dark">
+      <div class="content-block section-content__item">
         <h3>О ЖК "Лунное море"</h3>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
         </p>
       </div>
-      <div class="content-item">
+      <div class="content-block section-content__item">
         <img src="images/moon-content-1.jpg" width="350" style="float: right" />
       </div>
     </div>
 
-    <div class="content d-flex bg-light">
-      <div class="content-item">
+    <div class="section-content bg-light">
+      <div class="content-block section-content__item">
         <img src="images/moon-content-2.jpg" width="350" style="float: left" />
       </div>
-      <div class="content-item">
+      <div class="content-block section-content__item">
         <h3>Места для отдыха</h3>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -77,77 +75,79 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
       </div>
     </div>
 
-    <div class="content d-flex bg-dark">
-      <div class="content-item">
+    <section class="section-content bg-dark">
+      <div class="content-block section-content__item">
         <h3 class="text-center">Оставтье заявку сегодня!</h3>
-        <form id="request-apartment">
-          <div class="form-block">
-            <span class="form-block-name">Параметры квартиры</span>
-            <div class="d-flex form-item">
+
+        <form>
+
+          <div class="form-label">
+            <span class="form-label__name">Параметры квартиры</span>
+            <div class="form-item">
               <label>Количество комнат:</label>
-              <select>
+              <select class="form-control form-control_w-7">
                 <option>1</option>
                 <option>2</option>
               </select>
             </div>
-            <div class="d-flex form-item">
+            <div class="form-item">
               <label>Отделка:</label>
-              <select>
+              <select class="form-control form-control_w-7">
                 <option>Без отделки</option>
                 <option>Евро отделка</option>
               </select>
             </div>
           </div>
-          <div class="form-block">
-            <span class="form-block-name">Контактная информация</span>
-            <div class="d-flex form-item">
+
+          <div class="form-label">
+            <span class="form-label__name">Контактная информация</span>
+            <div class="form-item">
               <label>Имя:</label>
-              <input type="text" />
+              <input type="text" class="form-control" />
             </div>
-            <div class="d-flex form-item">
+            <div class="form-item">
               <label>Телефон:</label>
-              <input type="text" />
+              <input type="text" class="form-control" />
             </div>
-            <div class="d-flex form-item">
+            <div class="form-item">
               <label>E-mail:</label>
-              <input type="text" />
+              <input type="text"  class="form-control" />
             </div>
           </div>
           <br />
           <button type="submit" class="btn btn-outline-success">Отправить</button>
         </form>
-      </div>
-    </div>
 
-    <div class="content bg-night text-light footer">
-      <div class="footer-block">
-        <div class="footer-block-name">
-          <div class="footer-block-name-brand">
+      </div>
+    </section>
+
+    <footer class="footer">
+
+      <section class="footer__block">
+          <div class="footer__brand">
             <img src="../images/logo_moon.png" width=30 />
             <span>Лунное море</span>
           </div>
-          <span class="footer-block-name-year">&copy 2002 год</span>
-        </div>
-      </div>
-      <div class="footer-block">
-        <div class="footer-block-list">
-          <span class="footer-block-list-header">Проектная документация</span>
-          <ul class="footer-block-list-list">
-            <li><a href="#">Скачать</a></li>
-            <li><a href="#">Посмотреть на сайте</a></li>
+          <span class="footer__year">&copy 2002 год</span>
+      </section>
+
+      <section class="footer__block">
+          <span class="footer__list-header">Проектная документация</span>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__list-link">Скачать</a></li>
+            <li><a href="#" class="footer__list-link">Посмотреть на сайте</a></li>
           </ul>
-        </div>
-      </div>
-      <div class="footer-block">
-        <div class="footer-block-list">
-          <span class="footer-block-list-header">О застройщике</span>
-          <ul class="footer-block-list-list">
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Сайт компании</a></li>
+      </section>
+
+      <section class="footer__block">
+          <span class="footer__list-header">О застройщике</span>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__list-link">Отзывы</a></li>
+            <li><a href="#" class="footer__list-link">Сайт компании</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
+      </section>
+
+    </footer>
 
   </body>
 </html>

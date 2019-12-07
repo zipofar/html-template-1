@@ -1,0 +1,30 @@
+header.masthead {
+  background: linear-gradient(rgba(9, 82, 185,.6) 0,rgba(71, 64, 76,.8)), url('../images/moon-main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 3rem;
+}
+
+.masthead__logo {
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+.masthead__header {
+  margin: 1rem 0;
+  text-align: center;
+  color: $white;
+}
+
+.masthead__description {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: $gray-100;
+}
+
+.masthead__btn_center {
+  text-align: center;
+}

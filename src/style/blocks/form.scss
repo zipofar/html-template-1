@@ -1,0 +1,48 @@
+.form-label {
+  padding: 20px;
+  border: solid 2px;
+  border-color: $primary;
+  position: relative;
+  margin-top: 30px;
+}
+
+.form-label__name {
+  position: absolute;
+  top: -15px;
+  padding: 5px;
+  background-color: $gray-100;
+  color: $primary;
+  font-weight: bold;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+.form-control {
+  border: 1px solid $gray-300;
+  border-radius: .375rem;
+  padding: .2rem;
+  background-color: $white;
+  margin-left: 1rem;
+  width: 100%;
+}
+
+@for $i from 1 to 10 {
+  .form-control_w-#{$i} {
+    width: $i + rem;
+  }
+}
+
+label {
+  width: 50%;
+}
+
+
+input {
+  width: 10rem;
+}
+
+

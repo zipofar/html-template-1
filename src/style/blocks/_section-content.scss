@@ -1,0 +1,14 @@
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+
+.section-content__item {
+  width: 350px;
+}
+
+.content-block {
+  padding: 1.25rem;
+}
