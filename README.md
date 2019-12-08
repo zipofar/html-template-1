@@ -2,7 +2,7 @@
   Responsive landing page. Stylesheet development with Scss + Webpack for building.
 
 ## Demo
-[Show Demo](https://zipofar-project-moon_sea.surge.sh/)
+[Show Demo](https://zipofar.github.io/html-template-1/)
 
 ## Development
 ```
