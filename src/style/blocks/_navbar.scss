@@ -5,6 +5,11 @@
   justify-content: space-between;
 }
 
+.navbar-collapse {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
 .navbar__brand {
   color: $gray-300;
   display:inline-block;
@@ -60,12 +65,16 @@
   .navbar {
     flex-wrap: wrap;
   }
+  .navbar-collapse {
+    width: 100%;
+    height: 0px;
+    position: relative;
+  }
   .navbar__nav {
     width: 100%;
     flex-direction: column;
-    margin-top: 1rem;
-  }
-  .navbar__navlink {
+    position: absolute;
+    bottom: 0px;
   }
   .navbar__toggler {
     display: inline-block;
