@@ -5,6 +5,5 @@ install:
 	yarn install
 
 build:
-	rm -rf ./dist
+	rm -rf ./docs
 	NODE_ENV=production npx webpack
-	echo zipofar-html-1.surge.sh > ./dist/CNAME
